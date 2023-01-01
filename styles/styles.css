@@ -59,6 +59,7 @@ img {
 .list {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 .visually-hidden {
     position: absolute;
@@ -76,8 +77,6 @@ img {
 
 .header {
     background-color: var(--background-color);
-    padding-top: 24px;
-    padding-bottom: 24px;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
@@ -93,13 +92,20 @@ img {
     gap: 77px;
    
 }
-
+.nav-list .nav-item {
+    outline: 1px var(--outline-style) gold;
+}
 .logo {
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
     font-family: var(--accent-font-family);
     font-weight: 700;
     font-size: 18px;
     line-height: calc(24/18);
     letter-spacing: 0.02em;
+    text-transform: uppercase;
 
     color: var(--primary-brand-color);
 
@@ -113,6 +119,10 @@ img {
     gap: 40px;
 }
 .nav-link {
+    display: block;
+    padding-top: var(--card-set-gap);
+    padding-bottom: var(--card-set-gap);
+
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -126,6 +136,10 @@ img {
     color: var(--body-text-color);
 }
 .contact-link {
+    display: block;
+    padding-top: var(--card-set-gap);
+    padding-bottom: var(--card-set-gap);
+
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -149,6 +163,7 @@ img {
 }
 
 .baner-section {
+    text-align: center;
     background-color: var(--background-color-inverter);
     padding-top: 192px;
     padding-bottom: 192px;
@@ -168,6 +183,7 @@ img {
     text-align: center;
 
     color: var(--inverter-color);
+    outline: 0.2px solid tomato;
 }
 .banner-btn {
     font-family: inherit;
@@ -364,11 +380,11 @@ img {
 /* Footer styles */
 .footer {
     background-color: var(--background-color-inverter);
+    padding-top: 84px;
+    padding-bottom: 100px;
 }
 .footer-container {
-    padding-left: 156px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    
 }
 .logo-part-footer {
     font-family: var(--accent-font-family);
@@ -381,6 +397,6 @@ img {
     letter-spacing: 0.02em;
     color: var(--light-accent-color);
     max-width: 264px;
-    margin-top: 16px;
+    /* margin-top: 16px; */
 }
 
